@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "redis-server",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/redis-server",
+            "args": [], // 程序运行的相关命令行参数
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}", // 当前文件夹名
+            "environment": [], // 需要添加的环境变量
+            "externalConsole": false, // 使用启用外部的终端，如果为false会使用集成终端
+            "MIMode": "lldb",
+            "preLaunchTask": "build" // 在运行之前，需要指定的任务，一般用来进行build，需要对应的是tasks.json中的label
+        },
+        {
+            "name": "redis-cli",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/redis-cli",
+            "args": [], // 程序运行的相关命令行参数
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}", // 当前文件夹名
+            "environment": [], // 需要添加的环境变量
+            "externalConsole": false, // 使用启用外部的终端，如果为false会使用集成终端
+            "MIMode": "lldb",
+            "preLaunchTask": "build" // 在运行之前，需要指定的任务，一般用来进行build，需要对应的是tasks.json中的label
+        }
+    ]
+}

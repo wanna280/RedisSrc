@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            // "command": "make && make test",
+            "command": "make",  // 执行make
+            "args": [], // 构建需要的命令行参数
+            "group": "build",
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
